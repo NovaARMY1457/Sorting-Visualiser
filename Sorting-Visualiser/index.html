@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assests/favicon.ico">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <h1 class="projext-title">Sorting Visualizer</h1>
+    <div id="array-container"></div>
+
+    <div class="algo-container">
+        <button type="button" class="button bubbleSort">Bubble Sort</button>
+        <button type="button" class="button selectionSort">Selection Sort</button>
+        <button type="button" class="button insertionSort">Insertion Sort</button>
+        <button type="button" class="button mergeSort">Merge Sort</button>
+        <button type="button" class="button quickSort">Quick Sort</button>
+    </div>
+
+    <div class="newArray-slider-container">            
+        <div id="newArray-container">
+            <button type="button" id="newArray" class="button">New Array</button>
+        </div>
+        <div class="slider-containers">
+            <span id="size" class="slider-container">
+                <label>Array Size</label>
+                <input id="arr_sz" class="slider" type="range" min="5" max="60" value=35 step=1 >
+            </span>
+            <span id="speed" class="slider-container">
+                <label>Speed</label>
+                <input id="speed_input" class="slider" type="range" min="1" max="8" step=1 value=5>
+            </span>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/selection.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+</body>
+</html>
